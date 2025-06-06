@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashi Gupta | Portfolio</title>
+  <meta name="description" content="Portfolio of Yashi Gupta, a creative front-end developer passionate about building engaging web experiences." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="My Logo" class="logo" />
+    </div>
+    <div class="container">
+      <h1>Yashi Gupta</h1>
+      <p class="tagline">Creative Front-End Developer | Web Enthusiast</p>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/yashi-gupta-790709314/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.instagram.com/yashiiii5224?utm_source=qr" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/yashig5224" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <button id="toggle-theme" aria-label="Toggle Dark/Light Mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section about-flex fade-in">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm a passionate front-end developer with a knack for crafting visually stunning, interactive websites.
+          My expertise lies in HTML, CSS, and JavaScript — and I’m always eager to learn new technologies.
+          <br><br>
+          I love transforming ideas into digital experiences that are both user-friendly and beautiful.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="profile.jpg" alt="Portrait of Yashi Gupta" class="profile-pic-small" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>OOPS</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section fade-in">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li><strong>Front-End Intern</strong> – XYZ Company (2023)<br/>Built dynamic landing pages and collaborated on UI/UX improvements.</li>
+        <li><strong>Freelancer</strong> – Personal Projects<br/>Created responsive websites for local clients using HTML/CSS/JS.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Interactive Student Planner</h3>
+          <p>JS-based planner with real-time calendar</p>
+          <a href="https://github.com/yashig5224/Student-Planner.git" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>FrostyDelight</h3>
+          <p>Interactive webpage for Icecreams and more.</p>
+          <a href="https://github.com/yashig5224/-FrostyDelight.git" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>The Novel Nest</h3>
+          <p>A cozy online haven where timeless stories and diverse genres come to life.</p>
+          <a href="https://github.com/yashig5224/The-Novels-Nest.git" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>The Echoes of the Forgotten Realm</h3>
+          <p>"Embark on a mysterious journey through enchanted realms where every choice shapes your destiny."</p>
+          <a href="#" onclick="return false;">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to work together?</p>
+      <a href="mailto:yashi_5224@outlook.com" class="contact-button">📧 Email Me</a>
+    </div>
+  </section>
+
+  <!-- Scroll to Top -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="scroll-to-top" aria-label="Back to top">⬆️</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yashi Gupta. All rights reserved. | <a href="#about">Back to Top</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="portfolio.js"></script>
+</body>
+</html>
