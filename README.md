@@ -28,8 +28,10 @@ About page-
 ![About ll](https://github.com/user-attachments/assets/49a01d32-69c6-44e9-890b-67710a1aaff9)
 Projects-
 ![Projects ll](https://github.com/user-attachments/assets/f4463077-bcf0-4fca-8072-40b36fe2c36c)
+<br>
 Blog-
                             **To be updated**
+<br>
 Skills-
 ![Skills ll](https://github.com/user-attachments/assets/2ded47fa-2fd5-4d34-9f86-1c0424cce4be)
 Contact-
@@ -42,8 +44,10 @@ About page-
 ![About dd](https://github.com/user-attachments/assets/ae971b4f-e234-4de7-b99e-1dfea6ba012f)
 Projects-
 ![Projects dd](https://github.com/user-attachments/assets/8d094b8e-7c4d-4fc7-8f92-3d74968b34ed)
+<br>
 Blog-
                             **To be updated**
+<br>                            
 Skills-
 ![skills dd](https://github.com/user-attachments/assets/4d03e7b7-bfd3-48f6-ac13-a7af4de19ab9)
 Contact-
