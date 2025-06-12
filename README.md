@@ -91,7 +91,7 @@ portfolio/
 -  Integrate Backend for Form Submission  
 -  Add SEO and Open Graph Metadata  
 
-
+## Socials
 - 📧 Email: yashi_5224@outlook.com
 - 💼 LinkedIn:(https://www.linkedin.com/in/yashi-gupta-790709314/)
 - 🖼️ Instagram:https://www.instagram.com/yashiiii5224?utm_source=qr
