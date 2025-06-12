@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Yashi Gupta</title>
+  <link rel="stylesheet" href="Projects.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Photos/logo.jpg" alt="Yashi Gupta logo" class="logo-img" />
+      <span>Yashi Gupta</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="About/About.html">About</a>
+      <a href="Projects/Projects.html">Projects</a>
+      <a href="Blog/Blog.html">Blog</a>
+      <a href="Skills/Skills.html">Skills</a>
+      <a href="Contact/Contact.html">Contact</a>
+      <button id="modeToggle" class="mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="projects-section">
+    <section class="projects-header">
+      <h1>My Projects</h1>
+      <p>Explore the work I've done — from creative front-end designs to useful tools.</p>
+
+      <div class="projects-controls">
+        <input type="text" id="searchInput" placeholder="Search projects..." />
+        <div class="category-filters">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="web">Web</button>
+          <button class="category-btn" data-category="ui">UI/UX</button>
+          <button class="category-btn" data-category="tools">Tools</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-grid">
+      <!-- Example Project Card -->
+      <div class="project-card" data-category="web">
+        <img src="Photos/Frosty Delight logo.png" alt="Project Logo" class="project-logo" />
+        <h3>FrostyDelight</h3>
+        <p class="snippet">A pastel-themed ice cream landing page built using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/yashig5224/-FrostyDelight.git" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card" data-category="tools">
+        <img src="Photos/logo copy.jpg" alt="Project Logo" class="project-logo" />
+        <h3>Student Planner</h3>
+        <p class="snippet">Organize tasks, categories, and events with this responsive planner app.</p>
+        <a href="https://github.com/yashig5224/Student-Planner" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card" data-category="ui">
+        <img src="Photos/novels nest logo.png" alt="Project Logo" class="project-logo" />
+        <h3>The Novel's Nest</h3>
+        <p class="snippet">A book discovery platform UI for readers and writers to connect.</p>
+        <a href="https://github.com/yashig5224/The-Novels-Nest" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project-card" data-category="ui">
+        <img src="Photos/echoes logo.png" alt="Project Logo" class="project-logo" />
+        <h3>Echoes of the Forgotten Realm</h3>
+        <p class="snippet">An immersive design concept for a fantasy game.</p>
+        <a href="https://github.com/yashig5224/Echoes-of-the-Forgotten-Realm" target="_blank" class="btn">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Yashi Gupta. All rights reserved.</p>
+  </footer>
+
+  <script src="Projects.js"></script>
+  <script src="mode-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+:root {
+  --bg: #f2f2f2;
+  --text: #1f1f1f;
+  --accent: #da627d;
+  --accent-secondary: #7180ac;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg: #121220;
+  --text: #f2f2f2;
+  --accent: #c77dff;
+  --accent-secondary: #80ffea;
+  --shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  --card-bg: #1f1f30;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+  gap: 0.6rem;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+/* ===== NAVIGATION ===== */
+.nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--accent);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.mode-toggle {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background: linear-gradient(to bottom right, var(--bg), var(--card));
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hero-content h1 span {
+  background: linear-gradient(to right, var(--accent), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* CTA Buttons with animated gradient */
+.cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, var(--accent), var(--accent-secondary));
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: 200% 200%;
+  animation: pulseShift 6s ease infinite;
+}
+
+@keyframes pulseShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  animation: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 192, 230, 0.3);
+}
+
+.hero-image img {
+  width: 320px;
+  border-radius: 20px;
+  border: 3px solid var(--accent);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--card);
+  font-size: 0.9rem;
+  color: #aaa;
+  box-shadow: inset 0 1px 0 var(--border);
+}

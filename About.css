@@ -1,0 +1,241 @@
+/* ========= THEME VARIABLES ========= */
+:root {
+  --bg: #f2f2f2;
+  --text: #1f1f1f;
+  --accent: #da627d;
+  --accent-secondary: #7180ac;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg: #121220;
+  --text: #f2f2f2;
+  --accent: #c77dff;
+  --accent-secondary: #80ffea;
+  --shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  --card-bg: #1f1f30;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: var(--card);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+  gap: 0.6rem;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+/* ===== Navigation Styling ===== */
+.nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--accent);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+
+
+/* ========= BASE STYLES ========= */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+/* ========= ANIMATION ========= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========= ABOUT SECTION ========= */
+.about-section {
+  padding: 5rem 2rem;
+  background: var(--bg);
+  transition: background 0.4s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* ========= IMAGE ========= */
+.about-image img {
+  width: 300px;
+  border-radius: 20px;
+  border: 3px solid var(--accent);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ========= TEXT ========= */
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+/* ========= HIGHLIGHTS ========= */
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.highlight-box {
+  background: linear-gradient(to right, var(--accent), var(--accent-secondary));
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease;
+}
+
+/* ========= SOCIAL LINKS ========= */
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-links a img {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 0 8px var(--accent));
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 240px;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .highlight-box {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+#typewriter::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--card);
+  font-size: 0.9rem;
+  color: #aaa;
+  box-shadow: inset 0 1px 0 var(--border);
+}
