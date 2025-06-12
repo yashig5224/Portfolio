@@ -64,28 +64,28 @@ portfolio/<br>
 ├── Projects.html<br>
 ├── Skills.html<br>
 ├── Blog.html<br>
-├── Contact.html<br>
+├── Contact.html<br><br>
 │
-├── css/<br><br>
+├── css/<br>
 │ ├── main.css<br>
 │ ├── about.css<br>
 │ ├── contact.css<br>
 │ ├── blog.css<br>
-│ └── skills.css<br>
+│ └── skills.css<br><br>
 │
-├── js/<br><br>
+├── js/<br>
 │ ├── main.js<br>
 │ ├── theme.js<br>
 │ ├── projects.js<br>
-│ └── contact.js<br>
+│ └── contact.js<br><br>
 │
-├── Photos/<br><br>
+├── Photos/<br>
 │ ├── logo.jpg<br>
 │ ├── project1.png<br>
 │ ├── profile.jpg<br>
-│ └── ...<br>
+│ └── ...<br><br>
 │
-└── README.md<br><br>
+└── README.md<br>
 
 
 ## Future Enhancements
