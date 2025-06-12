@@ -53,35 +53,35 @@ Contact-
 
 ## Folder Structure
 
-portfolio/
+portfolio/<br>
 │
-├── index.html
-├── About.html
-├── Projects.html
-├── Skills.html
-├── Blog.html
-├── Contact.html
+├── index.html<br>
+├── About.html <br>
+├── Projects.html<br>
+├── Skills.html<br>
+├── Blog.html<br>
+├── Contact.html<br>
 │
-├── css/
-│ ├── main.css
-│ ├── about.css
-│ ├── contact.css
-│ ├── blog.css
-│ └── skills.css
+├── css/<br><br>
+│ ├── main.css<br>
+│ ├── about.css<br>
+│ ├── contact.css<br>
+│ ├── blog.css<br>
+│ └── skills.css<br>
 │
-├── js/
-│ ├── main.js
-│ ├── theme.js
-│ ├── projects.js
-│ └── contact.js
+├── js/<br><br>
+│ ├── main.js<br>
+│ ├── theme.js<br>
+│ ├── projects.js<br>
+│ └── contact.js<br>
 │
-├── Photos/
-│ ├── logo.jpg
-│ ├── project1.png
-│ ├── profile.jpg
-│ └── ...
+├── Photos/<br><br>
+│ ├── logo.jpg<br>
+│ ├── project1.png<br>
+│ ├── profile.jpg<br>
+│ └── ...<br>
 │
-└── README.md
+└── README.md<br><br>
 
 
 ## Future Enhancements
